@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>میری حیات کی روشنی، سالگرہ مبارک ہو!</title>
+    <style>
+        /* Urdu Font Import */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
+        
+        /* General Styles */
+        body { 
+            margin: 0; 
+            background-color: #f7f7f7; 
+            font-family: 'Noto Nastaliq Urdu', Arial, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            text-align: right; 
+        }
+        
+        /* Modal Background - Applies to both modals */
+        .birthday-modal {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6); 
+        }
+        
+        /* Modal Content Box */
+        .modal-content {
+            background-color: #ffffff;
+            margin: 15% auto; 
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: right; 
+            /* Added Fade In and Pulse Animation */
+            animation: fadeIn 1s ease-out, pulse 2s infinite alternate;
+        }
+        
+        /* Headings and Text Styles */
+        .modal-content h1 { color: #e91e63; font-size: 2.2em; margin-bottom: 5px; text-align: center; }
+        .modal-content h2.dob { 
+            color: #333; 
+            font-size: 1.5em; 
+            margin-bottom: 25px; 
+            font-weight: bold; 
+            text-align: center; 
+            border-bottom: 2px solid #e91e63;
+            padding-bottom: 10px;
+        }
+        .modal-content p { color: #333; font-size: 1.1em; line-height: 1.8; }
+        
+        /* Close Button (Adjusted for RTL layout) */
+        .close-btn { 
+            color: #aaa; float: left; 
+            font-size: 28px; font-weight: bold; 
+            text-decoration: none; position: absolute; top: 10px; left: 20px; 
+        }
+        .close-btn:hover, .close-btn:focus { color: #e91e63; cursor: pointer; }
+
+        /* Animations */
+        @keyframes fadeIn { 
+            from { opacity: 0; transform: scale(0.9); } 
+            to { opacity: 1; transform: scale(1); } 
+        }
+        
+        /* Pulse Animation */
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+            100% { transform: scale(1.02); box-shadow: 0 10px 40px rgba(233, 30, 99, 0.5); }
+        }
+    </style>
+</head>
+<body>
+
+<div id="birthdayModal" class="birthday-modal" style="display: block;">
+  <div class="modal-content">
+    <a href="#" class="close-btn" onclick="document.getElementById('birthdayModal').style.display='none';">&times;</a>
+    
+    <h1>میری حیات کی روشنی</h1>
+    
+
+    <p>
+    میری جان، کبھی کبھی مجھے محسوس ہوتا ہے کہ میرے پاس ایسے الفاظ نہیں ہیں جو یہ بیان کر سکیں کہ آپ میرے لیے کتنی خاص ہیں۔ آپ صرف میری گرل فرینڈ نہیں ہیں؛ آپ میری بہترین دوست، میری حوصلہ افزائی، اور میری پناہ گاہ ہیں۔ آپ کے ساتھ ہر لمحہ ایک تحفہ ہے۔
+
+آپ کی موجودگی میری زندگی کو مکمل بنا دیتی ہے۔ آپ کا پیار مجھے وہ ہمت دیتا ہے کہ میں خود پر یقین کروں اور بڑے خواب دیکھوں۔ میں اس بات کی قدر کرتا ہوں کہ آپ مجھے اس طرح قبول کرتی ہیں جیسا میں ہوں۔ آپ کی مسکراہٹ، آپ کا ساتھ، اور آپ کی سمجھداری، یہ سب میرے لیے دنیا کی سب سے بڑی دولت ہے۔
+    </p>
+    <p style="font-style: italic; color: #777;">
+       میں آپ سے صرف محبت ہی نہیں کرتا، بلکہ میں آپ کا احترام کرتا ہوں اور آپ کی پرواہ کرتا ہوں۔ میں ہمیشہ آپ کے ساتھ رہنا چاہتا ہوں—ہر کامیابی پر آپ کا جشن منانے کے لیے اور ہر مشکل میں آپ کا ہاتھ تھامنے کے لیے۔
+    </p>
+    <p>
+       آپ نے میری زندگی کو بہترین بنا دیا ہے۔ شکریہ کہ آپ میری دنیا میں آئیں۔
+    </p>
+    <p style="margin-top: 20px; color: #e91e63; font-weight: bold; text-align: center;">
+        آپ کا پیار،<br>
+        [ملک وہاب]
+    </p>
+    </div>
+</div>
+
+<div id="imageModal" class="birthday-modal" style="display: none;">
+  <div class="modal-content" style="max-width: 400px; padding: 10px;">
+    <a href="#" class="close-btn" style="color: #e91e63; top: 10px; left: 20px;" onclick="document.getElementById('imageModal').style.display='none';">&times;</a>
+    
+    <h3 style="color: #e91e63; font-size: 1.5em; text-align: center; margin-top: 5px;">
+        صرف آپ کے لیے! ❤️
+    </h3>
+
+      <P style="text-align: center; font-size: 3em; margin-top: 15px;">
+         I LOVE YOU 
+         </P>
+    <p style="text-align: center; font-size: 1em; margin-top: 15px;">
+        ALWAYS IN MY HEART 💕
+    </p>
+  </div>
+</div>
+
+<script>
+    // 10 سیکنڈ کی تاخیر (10000 milliseconds)
+    setTimeout(function() {
+        // پہلے والے Modal کو چھپا دیں
+        document.getElementById('birthdayModal').style.display = 'none';
+
+        // تصویر والے Modal کو ظاہر کر دیں
+        document.getElementById('imageModal').style.display = 'block';
+    }, 10000); 
+</script>
+
+</body>
+</html>
+
+
